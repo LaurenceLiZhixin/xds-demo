@@ -1,0 +1,3 @@
+export POD_NAME=laurence-dev-77dfd66cb8-79n7k
+export POD_NAMESPACE=default
+export GRPC_XDS_EXPERIMENTAL_SECURITY_SUPPORT=false

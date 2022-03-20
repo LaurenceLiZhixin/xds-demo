@@ -1,0 +1,19 @@
+dubbo:
+  registries:
+    xds:
+      protocol: xds
+      address: istiod-grpc.istio-system.svc.cluster.local:15010
+  protocols:
+    triple:
+      name: tri
+      port: 20000
+  consumer:
+    check: true
+    max-wait-time-for-service-discovery: 10m
+    references:
+      GreeterClientImpl:
+        protocol: tri
+#  provider:
+#    services:
+#      GreeterServerImpl:
+#        interface: "" # read from stub
